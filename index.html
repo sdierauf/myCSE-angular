@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-controller="HeaderController">
+    <head>
+        <title>myCSE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/bootstrap-3.2.min.css">
+        <link rel="stylesheet" href="styles/scylla.css" media="screen">
+        <link rel="stylesheet" href="styles/font-awesome.css">
+        <link rel="stylesheet" href="components/toastr/toastr.css" media="screen">
+        <script type="text/javascript" src="components/jquery/jquery.js"></script>
+        <script type="text/javascript" src="components/jwerty/jwerty.js"></script>
+        <script type="text/javascript" src="components/papa.parse/jquery.parse.js"></script>
+        <script type="text/javascript" src="components/angular/angular.js"></script>
+        <script type="text/javascript" src="components/angular-route/angular-route.js"></script>
+        <script type="text/javascript" src="components/spin.js/spin.js"></script>
+    </head>
+    <body>
+
+        <div class="navbar navbar-default">
+            <div class="navbar-inner">
+                <a class="brand navbar-brand" href="#">myCSE</a>
+                <div ng-cloak>
+                    <ul class="nav navbar-nav">
+                        <li ng-repeat="header in headers" ng-id="{{header.id}}" ng-class="isActive(header)">
+                            <a ng-href="{{header.href}}"><i class="{{header.icon}} icon-large"></i> {{header.label}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+                <!--
+                <div class="pull-right">
+                    <a id="loginButton" ng-click="showLogin()">Login</a> /
+                    <a id="registerButton" ng-click="showRegister()">Register</a>
+                </div>
+                -->
+            </div>
+        </div>
+
+
+        <div id="mainView" class="container-fluid" ng-view>
+            <h1>Loading...</h1>
+        </div>
+
+        <script data-main="app/main" src="components/requirejs/require.js"></script>
+    </body>
+
+
+</html>

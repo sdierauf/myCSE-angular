@@ -1,0 +1,46 @@
+{
+  "name": "Papa-Parse",
+  "main": "jquery.parse.js",
+  "homepage": "http://papaparse.com",
+  "authors": [
+    "Matthew Holt"
+  ],
+  "description": "Papa is a powerful CSV (delimited text) parser",
+  "keywords": [
+    "csv",
+    "parse",
+    "parsing",
+    "parser",
+    "delimited",
+    "text",
+    "data",
+    "auto-detect",
+    "comma",
+    "tab",
+    "pipe",
+    "file",
+    "filereader",
+    "stream"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.6.0"
+  },
+  "version": "2.0.8",
+  "_release": "2.0.8",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.8",
+    "commit": "31d7f92027a83b51852ee4ebb6807a0a182fce19"
+  },
+  "_source": "git://github.com/mholt/jquery.parse.git",
+  "_target": "~2.0.7",
+  "_originalSource": "papa.parse"
+}

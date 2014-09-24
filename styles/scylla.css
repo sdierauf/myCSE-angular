@@ -1,0 +1,145 @@
+body{
+    height: 100%;
+    background: #EEEEEE no-repeat fixed 100% 100%;
+}
+a{
+    color:#6485c3;
+}
+.navbar a.brand{
+    color:#6485c3;
+    font-size:30px;
+}
+.nav{
+    font-size:24px;
+}
+.nav i{
+    display:inline-block;
+    vertical-align: middle;
+}
+#mainView{
+    margin-top:-20px;/* bootstrap navbar has a 20px navbar bottom */
+    background:rgba(255, 255, 255, 0.7);
+    padding:10px;
+}
+.processing-spinner-container{
+    position: absolute;
+    background-color: rgba(230, 230, 230, 0.5);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+}
+.processing-spinner-container .spinner{
+    margin-left:50%;
+    margin-top:10%;
+}
+
+.headerIcon i{
+    text-decoration: none;
+}
+
+.bigThumb{
+    width:120px;
+    height:120px;
+}
+
+.masterResult .media-heading{
+    color:green;
+}
+.masterResult .notMasterStar{
+    display:none;
+}
+.notMasterResult .masterStar{
+    display:none;
+}
+.clickable{
+    cursor: pointer;
+}
+.gold {
+    color:#ffd700;
+}
+.actionColor{
+    color:blue;
+}
+
+.diff.resultAIsMaster .resultA, .diff.resultBIsMaster .resultB{
+    color:green;
+}
+
+.diff.pass .distortion{
+    color:#AAAAAA;
+}
+.diff.fail .distortion{
+    color:#FF0000;
+}
+
+.snapshotDetails .state.Failure{
+    color:#FF0000;
+}
+.snapshotDetails .state.Queued{
+    color: #0000FF;
+}
+.snapshotDetails .state.Capturing{
+    color: #00FFFF;
+}
+.snapshotDetails .state.Complete{
+    color:#00FF00;
+}
+
+
+/** Diff Detail **/
+input, label{
+    display:inline;
+}
+img.output, img.master{
+    /** We set this in case the snapshot is transparent... slide doesn't work very well */
+    background-color:#FFFFFF
+}
+.diffControl {
+    min-height: 1000px;
+    position:relative;
+}
+.diffControl .selectors{
+    padding: 20px 30px;
+
+}
+
+.diffControl .controls{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width:100%;
+    box-sizing:border-box;
+    margin: 55px 0px 0 0px;
+    background-color: #EEEEFF;
+}
+
+.diffControl img{
+    position:absolute;
+    top:25px;
+    margin-left:-10px;
+}
+
+.batch.media .pass, .reportResult .pass{
+    color:#7cfc00;
+}
+.batch.media .fail, .reportResult .fail{
+    color:#ff4500;
+}
+.batch.media .exception, .reportResult .exception{
+    color:#8b0000;
+}
+
+#resultSelector .pass{
+    color: #00FF00;
+}
+#resultSelector .fail{
+    color: #FF0000;
+}
+
+.gravatar80{
+    width: 80px;
+    height: 80px;
+}
