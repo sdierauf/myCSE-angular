@@ -52,7 +52,7 @@ require([
             {templateUrl: 'app/internships/internships.html',
                 controller: 'InternshipsController'})
             .when('/research',
-            {templateUrl: 'app/research/research',
+            {templateUrl: 'app/research/research.html',
                 controller: 'ResearchController'})
             .when('/studyabroad',
             {templateUrl: 'app/studyabroad/studyabroad.html',
