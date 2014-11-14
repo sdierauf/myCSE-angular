@@ -1,1 +1,3 @@
-scylla/
+*.xml
+.idea
+./.idea/*
