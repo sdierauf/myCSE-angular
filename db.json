@@ -1,0 +1,14 @@
+{
+  "users" : [
+    {
+      "id" : 1232328,
+      "name" : "Stefan Dierauf",
+      "picUrl" : "https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10665136_10204685831133308_5748951015514845179_n.jpg"
+    },
+    {
+      "id" : 1229752,
+      "name" : "Max Gollub",
+      "picUrl" : "https://scontent-a-sea.xx.fbcdn.net/hphotos-xaf1/t31.0-8/1941613_835937463090988_6873493239512300043_o.jpg"
+    }
+  ]
+}
