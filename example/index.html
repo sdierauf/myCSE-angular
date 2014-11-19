@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MyCSE</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Profile</a></li>
+            <li><a href="#tools">Tools</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container container-fluid main">
+      <div class="row">
+        <div class="col-sm-8">
+        <h1 style="font-size: 4em;">MyCSE Profile</h1>
+        <br>
+        <!-- Personal Details -->
+        <h2>Personal Details:</h2>
+        <br>
+          <form class="form-horizontal col-sm-offset-1" role="form" style="font-size: 1.2em">
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Name: </label>
+              <div class="col-sm-10">
+                <p class="form-control-static">Stefan Dierauf</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Major: </label>
+              <div class="col-sm-10">
+                <p class="form-control-static">Computer Science</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Net ID: </label>
+              <div class="col-sm-10">
+                <p class="form-control-static">sdierauf</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-4">
+          <img src="me.jpg" class="img img-thumbnail img-circle">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-8">
+          <h2>Courses Completed:</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr><th>Quarter</th>
+              <th>Course</th>
+              <th>Title</th>
+            </tr></thead>
+            <tbody>
+                <td>Au 2012</td>
+                <td>CSE 142</td>
+                <td>Computer Programming I</td>
+              </tr>
+                <td>Wi 2013</td>
+                <td>CSE 143</td>
+                <td>Computer Programming II</td>
+              </tr>
+                <td>Sp 2014</td>
+                <td>CSE 154</td>
+                <td>Web Programming</td>
+              </tr>
+                <td>Sp 2014</td>
+                <td>CSE 311</td>
+                <td>Foundations Of Computing I</td>
+              </tr>
+                <td>Au 2013</td>
+                <td>CSE 351</td>
+                <td>The Hardware/software Interface</td>
+              </tr>
+                <td>Au 2013</td>
+                <td>CSE 390a</td>
+                <td>System and Software Tools</td>
+              </tr>
+                <td>Sp 2013</td>
+                <td>CSE 490o</td>
+                <td>Special Topics CSE</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="col-sm-4">
+          <h2>Degree Prerequisites:</h2>
+          <br><br>
+          <table class="table">
+            <tr>
+              <td class="success">CSE 142</td>
+            </tr>
+            <tr><td class="success">CSE 143</td></tr>
+            <tr><td class="success">CSE 311</td></tr>
+            <tr><td class="success">MATH 308</td></tr>
+            <tr><td class="warning">CSE 331</td></tr>
+            <tr><td class="warning">CSE 332</td></tr>
+            <tr><td class="warning">1/2 elective 300 level credits</td></tr>
+            <tr><td class="danger">CSE 312</td></tr>
+            <tr><td class="danger">0/4 required 400 level credits</td></tr>
+          </table>
+        </div>    
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Recommended Courses:</h2>
+          <p>Based on what's available next quarter, what you've taken, and our prerequisite tree, we recommend the following classes</p>
+        </div>
+        <div class="col-sm-10">
+          <div class="col-sm-3" style="background-color: #8ad2ff; margin-right: 5px">
+            <h3>CSE 312</h3>
+            <p>Foundations of Computing II<p>
+          </div>
+          <div class="col-sm-3" style="background-color: #8ad2ff; margin-right: 5px">
+            <h3>CSE 333</h3>
+            <p>Systems Programming<p>
+          </div>
+          <div class="col-sm-3" style="background-color: #ff8bd2; margin-right: 5px">
+            <h3>Non CSE Class</h3>
+            <p>Don't want to work too hard!</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Work experience: </h1>
+          <br>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th onclick='do_sort_table(this);return false;'>Company</th>
+                <th onclick='do_sort_table(this);return false;'>Start mo</th>
+                <th sortdir='up' onclick='do_sort_table(this);return false;'>Start yr</th>
+                <th onclick='do_sort_table(this);return false;'>End mo</th>
+                <th onclick='do_sort_table(this);return false;'>End yr</th>
+                <th onclick='do_sort_table(this);return false;'>Position</th>
+                <th onclick='do_sort_table(this);return false;'>Duties</th>
+                <th onclick='do_sort_table(this);return false;'>Notes</th>
+                <th class='notsortable'></th>
+                <th class='notsortable'></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="sortabledata2">
+
+                <td >  Simply Measured</td>
+                <td >  Jun</td>
+                <td >  2014</td>
+                <td >  Sep</td>
+                <td >  2014</td>
+                <td >  Software Engineer</td>
+                <td >  Built awesome things with javascript</td>
+                <td >  &nbsp;</td>
+                <td class="sortabledatabutton2" >  <a href="/mycse?mycsetab=tab_work_hx&action=edit_work_history&work_history_id=32520">Edit</a></td>
+                <td class="sortabledatabutton2" >  <a href="/mycse?mycsetab=tab_work_hx&action=delete_work_history&work_history_id=32520">Delete</a></td>
+              </tr>
+              <tr class="sortabledata1">
+
+                <td >  DawgBytes</td>
+                <td >  Jun</td>
+                <td >  2013</td>
+                <td >  Aug</td>
+                <td >  2013</td>
+                <td >  Camp Counselor</td>
+                <td >  Taught android development to middle or highschoolers</td>
+                <td >  &nbsp;</td>
+                <td class="sortabledatabutton1" >  <a href="/mycse?mycsetab=tab_work_hx&action=edit_work_history&work_history_id=31989">Edit</a></td>
+                <td class="sortabledatabutton1" >  <a href="/mycse?mycsetab=tab_work_hx&action=delete_work_history&work_history_id=31989">Delete</a></td>
+              </tr>
+              <tr class="sortabledata2">
+                <td >  UW CSE</td>
+                <td >  Apr</td>
+                <td >  2013</td>
+                <td >  &nbsp;</td>
+                <td >  &nbsp;</td>
+                <td >  IT Support</td>
+                <td >  -Support UW CSE staff, faculty, and students
+          -Manage UW CSE website</td>
+                <td >  &nbsp;</td>
+                <td class="sortabledatabutton2" >  <a href="/mycse?mycsetab=tab_work_hx&action=edit_work_history&work_history_id=31988">Edit</a></td>
+                <td class="sortabledatabutton2" >  <a href="/mycse?mycsetab=tab_work_hx&action=delete_work_history&work_history_id=31988">Delete</a></td>
+              </tr>
+              <tr class="sortabledata1">
+
+                <td >  YWCA IT</td>
+                <td >  Sep</td>
+                <td >  2010</td>
+                <td >  Aug</td>
+                <td >  2012</td>
+                <td >  IT Support/Sysadmin</td>
+                <td >  -Managed network  and provided support to ~100 employees</td>
+                <td >  &nbsp;</td>
+                <td class="sortabledatabutton1" >  <a href="/mycse?mycsetab=tab_work_hx&action=edit_work_history&work_history_id=31990">Edit</a></td>
+                <td class="sortabledatabutton1" >  <a href="/mycse?mycsetab=tab_work_hx&action=delete_work_history&work_history_id=31990">Delete</a></td>
+              </tr>
+              <tr class='sortbottom'>
+                    <td colspan="9" class="ugadata2"><em>Add new row<em></td>
+                    <td colspan="2" class="ugaopbutton2"><a href="/mycse?mycsetab=tab_work_hx&action=new_work_history">Add</a></td>
+          </tr>
+          
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="btn btn-success btn-lg">(+) Click here to add Research information</button>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="btn btn-success btn-lg">(+) Click here to add Scholarship information</button>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="btn btn-success btn-lg">(+) Click here to add Awards information</button>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="btn btn-success btn-lg">(+) Click here to add Study Abroad information</button>
+        </div>
+      </div>
+      <br> 
+      
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Helpful Links:</h1>
+          <br>
+      <div class="col-md-6">
+        <span class="navlinkbig">Advising:</span>
+        <ul class='navlist'>
+          <li><a target='_blank' href='http://www.cs.washington.edu/education/ugrad/admin/ugrad.advising.html' class='navlink'>CSE&nbsp;Advising&nbsp;(Dropin&nbsp;Hours)</a></li>
+          <li><a target='_blank' href='http://www.cs.washington.edu/education/ugrad/current/counseling_resources.html' class='navlink'>Advising/Counseling&nbsp;Resources</a></li>
+          <li><a target='_blank' href='http://www.cs.washington.edu/htbin-post/unrestricted/education/fb.cgi' class='navlink'>Anonymous&nbsp;Feedback<img src="/images/logo13.png" border="0" width="18" height="13" alt="CSE only" /></a></li>
+        </ul>
+
+        <br />
+
+        <span class="navlinkbig">Course Information:</span>
+        <ul class='navlist'>
+          <li><a target='_blank' href='http://www.cs.washington.edu/education/time-sched/' class='navlink'>CSE&nbsp;Course&nbsp;Schedule</a></li>
+          <li><a target='_blank' href='http://www.cs.washington.edu/education/course-webs.html' class='navlink'>Course&nbsp;Homepages</a></li>
+          <li><a target='_blank' href='http://www.cs.washington.edu/education/ugrad/current/Capstone.html' class='navlink'>Capstone&nbsp;Definition</a></li>
+        </ul>
+
+        <br />
+
+        <span class="navlinkbig">Department&nbsp;Information:</span>
+        <ul class='navlist'>
+          <li><a target='_blank' href='http://www.cs.washington.edu/education/ugrad-brochure/handbook.html' class='navlink'>Undergraduate&nbsp;Handbook</a></li>
+          <li><a target='_blank' href='http://www.cs.washington.edu/diversity/' class='navlink'>Diversity</a></li>
+          <li><a target='_blank' href='http://www.cs.washington.edu/chair/allen_center/' class='navlink'>Living&nbsp;in&nbsp;the&nbsp;Allen&nbsp;Center</a></li>
+          <li><a target='_blank' href='http://www.cs.washington.edu/people/acm/' class='navlink'>ACM&nbsp;Student&nbsp;Chapter</a></li>
+          <li><a target='_blank' href='http://www.cs.washington.edu/acmw/' class='navlink'>ACM-W&nbsp;Student&nbsp;Chapter</a></li>
+          <li><a target='_blank' href='http://wicse.cs.washington.edu/' class='navlink'>Women&nbsp;in&nbsp;CSE&nbsp;(WICSE)</a></li>
+        </ul>
+
+      </div>
+      <div class="col-md-6">
+        <span class="navlinkbig">Other&nbsp;Resources:</span>
+        <ul class='navlist'>
+          <li><a target='_blank' href='https://norfolk.cs.washington.edu/htbin-php/students/ugrad/' class='navlink'>CSE&nbsp;Undergrad&nbsp;Directory<img src="/images/logo13.png" border="0" width="18" height="13" alt="CSE only" /></a></li>
+          <li><a target='_blank' href='https://norfolk.cs.washington.edu/htbin-php/students/ugrad/opt.php' class='navlink'>My Directory Permissions</a></li>
+          <li><a target='_blank' href='https://norfolk.cs.washington.edu/htbin-php/cseoffice/facstaff/index_public.php' class='navlink'>CSE&nbsp;Faculty/Staff&nbsp;Directory<img src="/images/logo13.png" border="0" width="18" height="13" alt="CSE only" /></a></li>
+          <li><a target='_blank' href='http://www.cs.washington.edu/lab/about/ugrad-computing.html' class='navlink'>Computing&nbsp;Information</a></li>
+          <li><a target='_blank' href='http://www.cs.washington.edu/education/ugrad/current/graduateschool.htm' class='navlink'>Preparing&nbsp;for&nbsp;Graduate&nbsp;School</a></li>
+          <li><a target='_blank' href='http://maxnoy.com/interviews.html' class='navlink'>Tips&nbsp;for&nbsp;Job&nbsp;Interviews</a></li>
+          <li><a target='_blank' href='http://www.cs.washington.edu/education/exchanges.html' class='navlink'>KTH&nbsp;Exchange&nbsp;Program</a></li>
+          <li><a target='_blank' href='https://norfolk.cs.washington.edu/affiliates/resume_book/student/' class='navlink'>CSE Affiliates &quot;My Portfolio&quot;</a></li>
+        </ul>
+        <br>
+        <span class="navlinkbig">Computer&nbsp;Related</span>
+        <ul class='navlist'>
+          <li><a target='_blank' href='http://gmail.cs.washington.edu' class='navlink'>My Email</a></li>
+          <li><a target='_blank' href='http://www.cs.washington.edu/htbin-post/lab/myresources.cgi' class='navlink'>Accounts</a>
+          <li><a target='_blank' href='https://weblogin.cs.washington.edu/kpasswd' class='navlink'>Passwords</a>
+          <li><a target='_blank' href='http://www.cs.washington.edu/htbin-post/lab/groups.cgi' class='navlink'>My Unix Groups</a>
+          <li><a target='_blank' href='http://www.cs.washington.edu/htbin-post/lab/webgroups.cgi' class='navlink'>My Web Groups</a>
+          <li><a target='_blank' href='https://mailman.cs.washington.edu/mailman/member' class='navlink'>My CSE Mailing Lists</a>
+          <li><a target='_blank' href='https://mailman.cs.washington.edu/mailman/admin' class='navlink'>Mailing Lists I Administer</a>
+        </ul>
+      </div>
+    </div>
+
+        </div>
+      
+<!--
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+-->
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+</div>
+    </div>
+  </body>
+</html>
